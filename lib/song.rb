@@ -46,9 +46,9 @@ class Song
     name = parse[0]
     song = parse[2]
     new_song = self.new
-    binding.pry
     new_song.name = song
     new_song.artist_name = name
+    binding.pry
     new_song.save
   end
 end
