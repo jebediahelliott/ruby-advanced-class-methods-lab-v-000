@@ -42,7 +42,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    parse = file.split(" - ", ".")
+    parse = file.split(/ - |./)
     binding.pry
     parse = parse.pop
     name = parse[0]
