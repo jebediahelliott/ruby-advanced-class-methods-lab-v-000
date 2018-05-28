@@ -42,6 +42,7 @@ class Song
 
   def self.new_from_filename(file)
     parse = file.split(" - ", ".")
+    parse = parse.pop
     name = parse[0]
     song = parse[1]
     new_song = self.new
