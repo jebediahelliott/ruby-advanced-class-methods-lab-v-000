@@ -51,4 +51,15 @@ class Song
     new_song.save
     new_song
   end
+
+  def self.create_from_filename(file)
+    parse = file.split(/( - )|[.]/)
+    name = parse[0]
+    song = parse[2]
+    new_song = self.new
+    new_song.name = song
+    new_song.artist_name = name
+    new_song.save
+    new_song
+  end
 end
