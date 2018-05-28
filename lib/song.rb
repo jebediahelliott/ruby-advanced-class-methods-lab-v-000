@@ -48,7 +48,6 @@ class Song
     new_song = self.new
     new_song.name = song
     new_song.artist_name = name
-    binding.pry
     new_song.save
     new_song
   end
